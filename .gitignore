@@ -1,0 +1,38 @@
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+.DS_Store
+npm-debug.log
+yarn-error.log
+package-lock.json
+.idea
+*.iml
+.nuxt
+.vscode
+.output
+
+public/manifest*.json
+public/sw.js
+public/workbox-sw*.js*

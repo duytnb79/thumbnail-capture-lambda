@@ -46,8 +46,12 @@ const lambdaHandler = async (
   return "res";
 };
 
-// docker build -f Dockerfile -t capture:2 .
-// docker run --platform linux/amd64 -p 9000:8080 capture:2
+// docker build -f Dockerfile -t capture .
+// docker run --platform linux/amd64 -p 9000:8080 capture
+// curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d '{ "url": "https://www.t-fal.co.jp/about-t-fal/" }'
+
+// docker build -f Dockerfile.v2 -t capture-v2 .
+// docker run --platform linux/amd64 -p 9000:8080 capture
 // curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d '{ "url": "https://www.t-fal.co.jp/about-t-fal/" }'
 
 module.exports.lambdaHandler = lambdaHandler;
